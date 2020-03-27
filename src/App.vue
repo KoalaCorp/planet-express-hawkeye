@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-auto" >
     <router-link to="/">
       Home
     </router-link> | <router-link to="/visualization">
