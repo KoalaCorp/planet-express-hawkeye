@@ -27,6 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
+  weight: 100%;
   background-color: #333;
 }
 

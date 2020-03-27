@@ -3,36 +3,43 @@
 </template>
 
 <script>
-import vis from "vis-network";
-export default {
-    name: 'AppVisualization'
-};
-// create an array with nodes
-  var nodes = new vis.DataSet([
-    {id: 1, label: 'Node 1'},
-    {id: 2, label: 'Node 2'},
-    {id: 3, label: 'Node 3'},
-    {id: 4, label: 'Node 4'},
-    {id: 5, label: 'Node 5'}
-  ]);
-
-  // create an array with edges
-  var edges = new vis.DataSet([
-    {from: 1, to: 3},
-    {from: 1, to: 2},
-    {from: 2, to: 4},
-    {from: 2, to: 5},
-    {from: 3, to: 3}
-  ]);
-
-  // create a network
-  var container = document.getElementById('myNetwork');
-  var data = {
-    nodes: nodes,
-    edges: edges
+  import vis from "vis-network";
+  const axios = require('axios').default;
+  export default {
+      name: 'AppVisualization'
   };
-  var options = {};
-  var network = new vis.Network(container, data, options);
+  async function getData() {
+      try {
+         let res = await axios({
+              url: 'http://localhost:5000/api/topics/default/Ceuta/1',
+              method: 'get',
+              timeout: 8000,
+              headers: {
+                  'Content-Type': 'application/json',
+              }
+          })
+          if(res.status == 200){
+              var nodes = new vis.DataSet(res.data.topics);
+              // create an array with edges
+              var edges = new vis.DataSet(res.data.edges);
+
+              // create a network
+              var container = document.getElementById('myNetwork');
+              var data = {
+                nodes: nodes,
+                edges: edges
+              };
+              var options = {};
+              var network = new vis.Network(container, data, options);
+          }
+      }
+      catch (err) {
+          console.error(err);
+      }
+  }
+
+  getData();
+
 </script>
 
 <style lang="scss" scoped>
