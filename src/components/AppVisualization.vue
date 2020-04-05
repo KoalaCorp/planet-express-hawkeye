@@ -8,6 +8,7 @@
           </input>
           <button @click="search_topics()">Search</button>
         </div>
+        <Collections/>
       </div>
       <div class="container">
         <div class="row" id="myNetwork"></div>
@@ -41,19 +42,18 @@
 </template>
 
 <script>
-  // getData();
+  import Collections from "@/components/Collections.vue";
   import vis from "vis-network";
   import axios from "axios";
   export default {
     name: 'AppVisualization',
-    /* mounted gets called when the component gets mounted. */
-    /* AJAX calls are preferred in mounted lifecycle method */
     mounted() {
       var inside = this;
-      inside.getData = async function(topic) {
+
+      inside.getData = async function(topic, collection) {
           try {
              let res = await axios({
-                  url: 'http://localhost:5000/api/topics/default/'+ topic +'/1',
+                  url: 'http://localhost:5000/api/topics/' + collection + '/' + topic,
                   method: 'get',
                   timeout: 8000,
                   headers: {
@@ -104,8 +104,12 @@
     methods: {
       search_topics() {
         console.log(this.topic);
-        this.getData(this.topic);
+        console.log(this.collections_checked);
+        this.getData(this.topic, "elfarodeceuta");
       }
+    },
+    components: {
+      Collections
     }
   };
 </script>
