@@ -6,7 +6,9 @@
              name="inlineRadioOptions"
              :id="collection"
              :value="collection"
-             v-model="collections">
+             v-model="collections_checked"
+             @change="onCheckCollection"
+             >
       <label class="form-check-label" for="inlineRadio1">
         {{collection}}
       </label>
@@ -42,8 +44,14 @@
     },
     data() {
       return {
-        collections: []
+        collections: [],
+        collections_checked: []
       };
+    },
+    methods: {
+      onCheckCollection(event) {
+        this.$emit('change', this.collections_checked);
+      }
     }
   };
 </script>
