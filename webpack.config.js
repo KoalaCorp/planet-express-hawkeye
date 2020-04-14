@@ -1,9 +1,29 @@
-'use strict';
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
-const environment = (process.env.NODE_ENV || 'development').trim();
-
-if (environment === 'development') {
-    module.exports = require('./webpack_config/webpack.config.dev');
-} else {
-    module.exports = require('./webpack_config/webpack.config.prod');
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader"
+          }
+        ]
+      }
+    ]
+  },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: "./public/index.html",
+      filename: "./index.html"
+    })
+  ]
 }
