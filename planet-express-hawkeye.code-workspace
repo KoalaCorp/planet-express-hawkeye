@@ -10,6 +10,7 @@
     "editor.detectIndentation": false,
     // Set the default
     "editor.formatOnSave": false,
+    "prettier.eslintIntegration": true,
     // Enable per-language
     "[javascript]": {
       "editor.formatOnSave": true
