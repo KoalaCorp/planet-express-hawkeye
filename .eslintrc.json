@@ -1,9 +1,4 @@
 {
-  "plugins": [
-    "standard",
-    "babel",
-    "react"
-  ],
   "extends": [
     "standard",
     "eslint:recommended",
