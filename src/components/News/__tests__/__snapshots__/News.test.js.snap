@@ -1,52 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Application renders correctly 1`] = `
+exports[`News renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="App"
+        class="News"
       >
-        <form
-          class="SearchForm"
-        >
-          <input
-            placeholder="Search by topic"
-            type="search"
-          />
-          <button>
-            Visualize
-          </button>
-        </form>
-        <div
-          class="News"
-        >
-          News
-        </div>
+        News
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="App"
+      class="News"
     >
-      <form
-        class="SearchForm"
-      >
-        <input
-          placeholder="Search by topic"
-          type="search"
-        />
-        <button>
-          Visualize
-        </button>
-      </form>
-      <div
-        class="News"
-      >
-        News
-      </div>
+      News
     </div>
   </div>,
   "debug": [Function],

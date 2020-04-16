@@ -1,36 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Application renders correctly 1`] = `
+exports[`SearchForm renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="App"
-      >
-        <form
-          class="SearchForm"
-        >
-          <input
-            placeholder="Search by topic"
-            type="search"
-          />
-          <button>
-            Visualize
-          </button>
-        </form>
-        <div
-          class="News"
-        >
-          News
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="App"
-    >
       <form
         class="SearchForm"
       >
@@ -42,12 +16,20 @@ Object {
           Visualize
         </button>
       </form>
-      <div
-        class="News"
-      >
-        News
-      </div>
     </div>
+  </body>,
+  "container": <div>
+    <form
+      class="SearchForm"
+    >
+      <input
+        placeholder="Search by topic"
+        type="search"
+      />
+      <button>
+        Visualize
+      </button>
+    </form>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
