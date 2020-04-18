@@ -52,7 +52,7 @@
     "test:snapshots:update": "yarn test -u"
   },
   "homepage": "https://github.com/KoalaCorp/planet-express-hawkeye",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "repository": {
     "type": "git",
     "url": "git@github.com:KoalaCorp/planet-express-hawkeye.git"
