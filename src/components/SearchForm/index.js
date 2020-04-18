@@ -1,6 +1,6 @@
 import React from "react"
 
-const SearchForm = (props) => {
+const SearchForm = () => {
   return (
     <form className="SearchForm">
       <input type="search" placeholder="Search by topic" />
