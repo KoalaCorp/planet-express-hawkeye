@@ -10,17 +10,23 @@ module.exports = function (webpackEnv) {
           enforce: "pre",
           test: /\.(js|jsx)$/,
           exclude: /node_modules/,
-          loader: "eslint-loader",
-          options: {
-            cache: true,
+          use: {
+            loader: "eslint-loader",
+            options: {
+              cache: true,
+            },
           },
         },
         {
           test: /\.(js|jsx)$/,
           exclude: /node_modules/,
-          loader: "babel-loader",
-          options: {
-            cacheDirectory: true,
+          use: {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/preset-env"],
+              plugins: ["@babel/plugin-transform-runtime"],
+              cacheDirectory: true,
+            },
           },
         },
       ],
