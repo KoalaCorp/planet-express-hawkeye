@@ -51,6 +51,11 @@
     "test:watch": "yarn test --watch",
     "test:snapshots:update": "yarn test -u"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.Config.js": "<rootDir>/__mocks__/Config.js"
+    }
+  },
   "homepage": "https://github.com/KoalaCorp/planet-express-hawkeye",
   "license": "GPL-3.0",
   "repository": {

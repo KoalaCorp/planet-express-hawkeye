@@ -32,6 +32,13 @@ module.exports = function (webpackEnv) {
       }),
       new DuplicatePackageCheckerPlugin(),
     ],
+    externals: {
+      Config: JSON.stringify(
+        webpackEnv === "development"
+          ? require("./src/config/development.json")
+          : require("./src/config/production.json")
+      ),
+    },
     optimization: {
       splitChunks: {
         cacheGroups: {

@@ -20,10 +20,8 @@ Object {
           </button>
         </form>
         <div
-          class="News"
-        >
-          News
-        </div>
+          class="Collections"
+        />
       </div>
     </div>
   </body>,
@@ -43,10 +41,8 @@ Object {
         </button>
       </form>
       <div
-        class="News"
-      >
-        News
-      </div>
+        class="Collections"
+      />
     </div>
   </div>,
   "debug": [Function],
