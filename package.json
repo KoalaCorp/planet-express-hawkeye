@@ -68,7 +68,6 @@
   "jest": {
     "testPathIgnorePatterns": [
       "node_modules",
-      "<rootDir>/(?:.+?)/__mocks__/",
       "<rootDir>/(?:.+?)/tests/",
       "\\.cache",
       "<rootDir>.*/public"
