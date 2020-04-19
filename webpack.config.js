@@ -4,6 +4,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin")
 module.exports = function (webpackEnv) {
   return {
     mode: webpackEnv,
+    entry: "./src/index.js",
     module: {
       rules: [
         {
@@ -34,7 +35,6 @@ module.exports = function (webpackEnv) {
     plugins: [
       new HtmlWebPackPlugin({
         template: "./public/index.html",
-        filename: "./index.html",
       }),
       new DuplicatePackageCheckerPlugin(),
     ],
@@ -55,6 +55,10 @@ module.exports = function (webpackEnv) {
           },
         },
       },
+    },
+    devtool: "inline-source-map",
+    devServer: {
+      historyApiFallback: true,
     },
   }
 }

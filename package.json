@@ -20,7 +20,8 @@
   "dependencies": {
     "axios": "^0.19.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -65,6 +66,13 @@
     "test:snapshots:update": "yarn test -u"
   },
   "jest": {
+    "testPathIgnorePatterns": [
+      "node_modules",
+      "<rootDir>/(?:.+?)/__mocks__/",
+      "<rootDir>/(?:.+?)/__tests__/",
+      "\\.cache",
+      "<rootDir>.*/public"
+    ],
     "moduleNameMapper": {
       "\\.Config.js": "<rootDir>/__mocks__/Config.js"
     }

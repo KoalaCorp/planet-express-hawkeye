@@ -1,15 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Application renders correctly 1`] = `
+exports[`Footer renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <main>
-        <div>
-          Home
-        </div>
-      </main>
       <footer
         class="footer"
       >
@@ -50,11 +45,6 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <main>
-      <div>
-        Home
-      </div>
-    </main>
     <footer
       class="footer"
     >
