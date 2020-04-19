@@ -1,11 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Application renders correctly 1`] = `
+exports[`Header renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      +
       <header
         class="header"
       >
@@ -20,52 +19,9 @@ Object {
           The auto relational searcher for political documents in Spain
         </h2>
       </header>
-      <main>
-        <div>
-          Home
-        </div>
-      </main>
-      <footer
-        class="footer"
-      >
-        <ul
-          class="footer__navigation"
-        >
-          <li>
-            <a
-              href="/about"
-            >
-              about the project
-            </a>
-          </li>
-          <li>
-            <a
-              href="/team"
-            >
-              about the team
-            </a>
-          </li>
-        </ul>
-        <div
-          class="footer__license"
-        >
-          this project is under a
-           
-          <a
-            href="https://www.gnu.org/licenses/gpl-3.0.en.html"
-            rel="license external noopener noreferrer"
-            title="GNU General Public License v3.0"
-          >
-            GNU General Public License v3.0
-          </a>
-           
-          license
-        </div>
-      </footer>
     </div>
   </body>,
   "container": <div>
-    +
     <header
       class="header"
     >
@@ -80,48 +36,6 @@ Object {
         The auto relational searcher for political documents in Spain
       </h2>
     </header>
-    <main>
-      <div>
-        Home
-      </div>
-    </main>
-    <footer
-      class="footer"
-    >
-      <ul
-        class="footer__navigation"
-      >
-        <li>
-          <a
-            href="/about"
-          >
-            about the project
-          </a>
-        </li>
-        <li>
-          <a
-            href="/team"
-          >
-            about the team
-          </a>
-        </li>
-      </ul>
-      <div
-        class="footer__license"
-      >
-        this project is under a
-         
-        <a
-          href="https://www.gnu.org/licenses/gpl-3.0.en.html"
-          rel="license external noopener noreferrer"
-          title="GNU General Public License v3.0"
-        >
-          GNU General Public License v3.0
-        </a>
-         
-        license
-      </div>
-    </footer>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
