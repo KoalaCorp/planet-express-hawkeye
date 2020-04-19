@@ -7,6 +7,15 @@
     "Daniel Calderon <daniel.calderon.portillo@gmail.com> (https://danielcalderon.dev)",
     "Jose Luis Logroño <daniel.calderon.portillo@gmail.com> (joseluisgfx@gmail.com)"
   ],
+  "homepage": "https://github.com/KoalaCorp/planet-express-hawkeye",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:KoalaCorp/planet-express-hawkeye.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KoalaCorp/planet-express-hawkeye/issues"
+  },
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",
@@ -43,6 +52,10 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },
+  "resolutions": {
+    "minimist": "^1.2.5",
+    "serialize-javascript": "^3.0.0"
+  },
   "scripts": {
     "start": "serve --no-clipboard --single --listen 8080 dist",
     "dev": "webpack-dev-server --color --hot --mode development",
@@ -55,15 +68,6 @@
     "moduleNameMapper": {
       "\\.Config.js": "<rootDir>/__mocks__/Config.js"
     }
-  },
-  "homepage": "https://github.com/KoalaCorp/planet-express-hawkeye",
-  "license": "GPL-3.0",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:KoalaCorp/planet-express-hawkeye.git"
-  },
-  "bugs": {
-    "url": "https://github.com/KoalaCorp/planet-express-hawkeye/issues"
   },
   "browserslist": {
     "production": [
