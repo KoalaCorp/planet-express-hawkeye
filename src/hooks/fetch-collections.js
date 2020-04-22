@@ -2,27 +2,27 @@ import { useState, useEffect } from "react"
 import PlanetExpressCharts from "../services/planet-express-charts"
 
 const useFetchCollections = () => {
-  const [loading, setLoading] = useState(true)
+  const [loadingCollections, setLoadingCollections] = useState(true)
   const [collections, setCollections] = useState([])
-  const [errors, setErrors] = useState([])
+  const [errorsFetchCollections, setErrorsFetchCollections] = useState("")
 
   useEffect(() => {
     const fetchCollections = async () => {
       try {
-        setLoading(true)
+        setLoadingCollections(true)
         const response = await PlanetExpressCharts.fetchCollections()
         setCollections(response.data)
       } catch (err) {
-        setErrors(err)
+        setErrorsFetchCollections(err.toString())
       } finally {
-        setLoading(false)
+        setLoadingCollections(false)
       }
     }
 
     fetchCollections()
   }, [])
 
-  return { loading, collections, errors }
+  return { loadingCollections, collections, errorsFetchCollections }
 }
 
 export default useFetchCollections
