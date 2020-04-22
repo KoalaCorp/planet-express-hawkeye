@@ -66,17 +66,6 @@
     "test:watch": "yarn test --watch",
     "test:snapshots:update": "yarn test -u"
   },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "node_modules",
-      "<rootDir>/(?:.+?)/tests/",
-      "\\.cache",
-      "<rootDir>.*/public"
-    ],
-    "moduleNameMapper": {
-      "\\.Config.js": "<rootDir>/__mocks__/Config.js"
-    }
-  },
   "browserslist": {
     "production": [
       ">0.2%",
