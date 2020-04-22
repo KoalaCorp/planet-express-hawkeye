@@ -1,9 +1,64 @@
-'use strict';
+const DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack-plugin")
+const HtmlWebPackPlugin = require("html-webpack-plugin")
 
-const environment = (process.env.NODE_ENV || 'development').trim();
-
-if (environment === 'development') {
-    module.exports = require('./webpack_config/webpack.config.dev');
-} else {
-    module.exports = require('./webpack_config/webpack.config.prod');
+module.exports = function (webpackEnv) {
+  return {
+    mode: webpackEnv,
+    entry: "./src/index.js",
+    module: {
+      rules: [
+        {
+          enforce: "pre",
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          use: {
+            loader: "eslint-loader",
+            options: {
+              cache: true,
+            },
+          },
+        },
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          use: {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/preset-env"],
+              plugins: ["@babel/plugin-transform-runtime"],
+              cacheDirectory: true,
+            },
+          },
+        },
+      ],
+    },
+    plugins: [
+      new HtmlWebPackPlugin({
+        template: "./public/index.html",
+      }),
+      new DuplicatePackageCheckerPlugin(),
+    ],
+    externals: {
+      Config: JSON.stringify(
+        webpackEnv === "development"
+          ? require("./src/config/development.json")
+          : require("./src/config/production.json")
+      ),
+    },
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          commons: {
+            test: /[\\/]node_modules[\\/]/,
+            name: "vendors",
+            chunks: "all",
+          },
+        },
+      },
+    },
+    devtool: "inline-source-map",
+    devServer: {
+      historyApiFallback: true,
+    },
+  }
 }
