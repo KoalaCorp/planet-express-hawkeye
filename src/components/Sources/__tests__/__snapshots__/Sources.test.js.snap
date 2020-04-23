@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Collections renders correctly 1`] = `
+exports[`Sources renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="collections"
+        class="sources"
       >
         <ul
-          class="collections__list"
+          class="sources__list"
         />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="collections"
+      class="sources"
     >
       <ul
-        class="collections__list"
+        class="sources__list"
       />
     </div>
   </div>,

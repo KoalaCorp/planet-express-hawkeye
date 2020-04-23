@@ -3,9 +3,9 @@ import axios from "axios"
 import Config from "Config"
 
 class PlanetExpressCharts {
-  static fetchCollections() {
+  static fetchSources() {
     return axios.get(
-      `${Config.services.planetExpressCharts.path}/api/collections`,
+      `${Config.services.planetExpressCharts.path}/api/sources`,
       {
         timeout: Config.services.planetExpressCharts.timeout,
         headers: {

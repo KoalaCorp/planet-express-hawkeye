@@ -5,16 +5,16 @@ const useSearchParams = () => {
   const location = useLocation()
 
   const [topic, setTopic] = useState("")
-  const [collections, setCollections] = useState([])
+  const [sources, setSources] = useState([])
 
   useEffect(() => {
     const search = new URLSearchParams(location.search)
 
     setTopic(search.get("topic") || "")
-    setCollections(search.getAll("collections"))
+    setSources(search.getAll("sources"))
   }, [location.search])
 
-  return { topic, collections }
+  return { topic, sources }
 }
 
 export default useSearchParams
