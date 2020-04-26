@@ -8,18 +8,13 @@ import SearchForm from "../components/SearchForm"
 
 const Visualization = () => {
   const topic = useSearchParams().topic
-  const collections = useSearchParams().collections
+  const sources = useSearchParams().sources
 
   return (
     <React.Fragment>
       <Header />
       <main>
-        <div>
-          <SearchForm
-            topicSearchParam={topic}
-            collectionsSearchParam={collections}
-          />
-        </div>
+        <SearchForm topicSearchParam={topic} sourcesSearchParam={sources} />
       </main>
       <Footer />
     </React.Fragment>

@@ -20,9 +20,46 @@ Object {
         </h2>
       </header>
       <main>
-        <div>
-          Home
-        </div>
+        <form
+          action="/visualization"
+        >
+          <input
+            name="topic"
+            required=""
+            type="search"
+            value=""
+          />
+          <div
+            class="dropdown dropdown--sources dropdown--collapsed"
+          >
+            <button
+              class="dropdown__button"
+            >
+              all sources selected
+            </button>
+            <div
+              class="dropdown__menu"
+            >
+              <div
+                class="dropdown__error dropdown__error--visible"
+              >
+                You have to select at least one medium to search
+              </div>
+              <div
+                class="sources"
+              >
+                <div
+                  class="sources__errors"
+                >
+                  TypeError: Cannot read property 'planetExpressCharts' of undefined
+                </div>
+              </div>
+            </div>
+          </div>
+          <button>
+            Visualize
+          </button>
+        </form>
       </main>
       <footer
         class="footer"
@@ -79,9 +116,46 @@ Object {
       </h2>
     </header>
     <main>
-      <div>
-        Home
-      </div>
+      <form
+        action="/visualization"
+      >
+        <input
+          name="topic"
+          required=""
+          type="search"
+          value=""
+        />
+        <div
+          class="dropdown dropdown--sources dropdown--collapsed"
+        >
+          <button
+            class="dropdown__button"
+          >
+            all sources selected
+          </button>
+          <div
+            class="dropdown__menu"
+          >
+            <div
+              class="dropdown__error dropdown__error--visible"
+            >
+              You have to select at least one medium to search
+            </div>
+            <div
+              class="sources"
+            >
+              <div
+                class="sources__errors"
+              >
+                TypeError: Cannot read property 'planetExpressCharts' of undefined
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          Visualize
+        </button>
+      </form>
     </main>
     <footer
       class="footer"

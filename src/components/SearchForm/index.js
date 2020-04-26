@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 
-import CollectionsDropdown from "../CollectionsDropdown"
+import SourcesDropdown from "../SourcesDropdown"
 
-const SearchForm = ({ topicSearchParam, collectionsSearchParam }) => {
+const SearchForm = ({ topicSearchParam, sourcesSearchParam }) => {
   const [query, setQuery] = useState(topicSearchParam)
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const SearchForm = ({ topicSearchParam, collectionsSearchParam }) => {
         onChange={handleInputSearchChange}
       />
 
-      <CollectionsDropdown collectionsSearchParam={collectionsSearchParam} />
+      <SourcesDropdown sourcesSearchParam={sourcesSearchParam} />
 
       <button>Visualize</button>
     </form>
@@ -35,5 +35,5 @@ export default SearchForm
 
 SearchForm.propTypes = {
   topicSearchParam: PropTypes.string,
-  collectionsSearchParam: PropTypes.array,
+  sourcesSearchParam: PropTypes.array,
 }

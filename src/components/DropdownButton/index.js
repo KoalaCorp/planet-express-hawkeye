@@ -7,9 +7,9 @@ const DropdownButton = (props) => {
 
     const dropdown = e.target.parentElement
 
-    dropdown.classList.contains("dropdown__menu--hidden")
-      ? dropdown.classList.remove("dropdown__menu--hidden")
-      : dropdown.classList.add("dropdown__menu--hidden")
+    dropdown.classList.contains("dropdown--collapsed")
+      ? dropdown.classList.remove("dropdown--collapsed")
+      : dropdown.classList.add("dropdown--collapsed")
 
     if (props.handleOnClick) {
       props.handleOnClick()

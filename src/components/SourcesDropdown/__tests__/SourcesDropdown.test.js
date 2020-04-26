@@ -1,12 +1,12 @@
 import React from "react"
 import { render } from "../../../../tests/helpers"
 
-import CollectionsDropdown from "../"
+import SourcesDropdown from ".."
 
 const renderComponent = ({ ...props } = {}) =>
-  render(<CollectionsDropdown {...props} />)
+  render(<SourcesDropdown {...props} />)
 
-describe("CollectionsDropdown", () => {
+describe("SourcesDropdown", () => {
   it("renders correctly", () => {
     const dropdown = renderComponent()
     expect(dropdown).toMatchSnapshot()

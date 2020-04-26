@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CollectionsDropdown renders correctly 1`] = `
+exports[`SourcesDropdown renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="collectionsDropdown dropdown__menu--hidden"
+        class="dropdown dropdown--sources dropdown--collapsed"
       >
         <button
           class="dropdown__button"
         >
-          all medium selected
+          all sources selected
         </button>
         <div
           class="dropdown__menu"
@@ -22,10 +22,10 @@ Object {
             You have to select at least one medium to search
           </div>
           <div
-            class="collections"
+            class="sources"
           >
             <div
-              class="colletions__errors"
+              class="sources__errors"
             >
               TypeError: Cannot read property 'planetExpressCharts' of undefined
             </div>
@@ -36,12 +36,12 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="collectionsDropdown dropdown__menu--hidden"
+      class="dropdown dropdown--sources dropdown--collapsed"
     >
       <button
         class="dropdown__button"
       >
-        all medium selected
+        all sources selected
       </button>
       <div
         class="dropdown__menu"
@@ -52,10 +52,10 @@ Object {
           You have to select at least one medium to search
         </div>
         <div
-          class="collections"
+          class="sources"
         >
           <div
-            class="colletions__errors"
+            class="sources__errors"
           >
             TypeError: Cannot read property 'planetExpressCharts' of undefined
           </div>
