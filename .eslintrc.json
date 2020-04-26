@@ -22,5 +22,10 @@
     "prettier/babel",
     "prettier/react",
     "prettier/standard"
-  ]
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }
