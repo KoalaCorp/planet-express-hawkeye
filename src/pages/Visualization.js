@@ -14,9 +14,7 @@ const Visualization = () => {
     <React.Fragment>
       <Header />
       <main>
-        <div>
-          <SearchForm topicSearchParam={topic} sourcesSearchParam={sources} />
-        </div>
+        <SearchForm topicSearchParam={topic} sourcesSearchParam={sources} />
       </main>
       <Footer />
     </React.Fragment>
