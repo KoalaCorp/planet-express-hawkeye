@@ -6,19 +6,25 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="dropdown dropdown--sources dropdown--collapsed"
+        class="styled__Dropdown-sc-191offi-0 jQa-dxL dropdown dropdown--sources dropdown--collapsed"
       >
         <button
-          class="dropdown__button"
+          class="styled__Button-sc-9epqn7-0 feUrUb dropdown__button"
         >
           all sources selected
+          <i
+            icon="[object Object]"
+          />
         </button>
         <div
-          class="dropdown__menu"
+          class="styled__Menu-uutoje-0 bbtYLq dropdown__menu"
         >
           <div
-            class="dropdown__error dropdown__error--visible"
+            class="DropdownError__StyledDropdownError-sc-1pi6o8b-0 BcLUJ dropdown__error dropdown__error--visible"
           >
+            <i
+              icon="[object Object]"
+            />
             You have to select at least one medium to search
           </div>
           <div
@@ -36,19 +42,25 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="dropdown dropdown--sources dropdown--collapsed"
+      class="styled__Dropdown-sc-191offi-0 jQa-dxL dropdown dropdown--sources dropdown--collapsed"
     >
       <button
-        class="dropdown__button"
+        class="styled__Button-sc-9epqn7-0 feUrUb dropdown__button"
       >
         all sources selected
+        <i
+          icon="[object Object]"
+        />
       </button>
       <div
-        class="dropdown__menu"
+        class="styled__Menu-uutoje-0 bbtYLq dropdown__menu"
       >
         <div
-          class="dropdown__error dropdown__error--visible"
+          class="DropdownError__StyledDropdownError-sc-1pi6o8b-0 BcLUJ dropdown__error dropdown__error--visible"
         >
+          <i
+            icon="[object Object]"
+          />
           You have to select at least one medium to search
         </div>
         <div

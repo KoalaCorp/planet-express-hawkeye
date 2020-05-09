@@ -1,16 +1,9 @@
 import React from "react"
 
-import Footer from "../components/Footer"
+import Layout from "../layouts/Default"
 
 const NoMatch = () => {
-  return (
-    <React.Fragment>
-      <main>
-        <div>404</div>
-      </main>
-      <Footer />
-    </React.Fragment>
-  )
+  return <Layout>404 – No page found</Layout>
 }
 
 export default NoMatch

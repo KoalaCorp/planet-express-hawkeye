@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 
-import Sources from "../Sources"
-import DropdownButton from "../DropdownButton"
 import DropdownError from "../DropdownError"
+import DropdownMenu from "../DropdownMenu"
+import DropdownButton from "../DropdownButton"
+import Sources from "../Sources"
+
+import Styled from "./styled"
 
 import useFetchSources from "../../hooks/fetch-sources"
 
@@ -37,10 +40,16 @@ const SourcesDropdown = ({ sourcesSearchParam }) => {
   }
 
   return (
-    <div className="dropdown dropdown--sources dropdown--collapsed">
+    <Styled.Dropdown className="dropdown dropdown--sources dropdown--collapsed">
       <DropdownButton>{dropdownPrompt}</DropdownButton>
 
-      <div className="dropdown__menu">
+      <DropdownMenu
+        errorVisible={!selectedSources.length}
+        sources={sources}
+        selectedSources={selectedSources}
+        handleSourceInputChange={handleSourceInputChange}
+        errors={errorsFetchSources}
+      >
         <DropdownError visible={!selectedSources.length}>
           You have to select at least one medium to search
         </DropdownError>
@@ -51,8 +60,8 @@ const SourcesDropdown = ({ sourcesSearchParam }) => {
           handleSourceInputChange={handleSourceInputChange}
           errors={errorsFetchSources}
         />
-      </div>
-    </div>
+      </DropdownMenu>
+    </Styled.Dropdown>
   )
 }
 

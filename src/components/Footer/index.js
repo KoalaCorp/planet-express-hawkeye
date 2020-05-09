@@ -1,20 +1,56 @@
 import React from "react"
-
+import styled from "styled-components"
 import { Link } from "react-router-dom"
+
+import tools from "../../assets/styles/tools"
+
+const StyledFooter = styled.footer`
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  text-align: center;
+
+  @media ${tools.devices.lg} {
+    text-align: left;
+    display: flex;
+  }
+`
+
+const Navigation = styled.ul`
+  list-style: none;
+
+  @media ${tools.devices.lg} {
+    flex: 1;
+  }
+
+  li {
+    display: inline;
+    margin-right: 2rem;
+  }
+`
+
+const License = styled.div`
+  margin-top: 2rem;
+
+  @media ${tools.devices.lg} {
+    margin-top: 0;
+  }
+`
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <ul className="footer__navigation">
+    <StyledFooter>
+      <Navigation>
         <li>
           <Link to="/about">about the project</Link>
         </li>
         <li>
           <Link to="/team">about the team</Link>
         </li>
-      </ul>
+      </Navigation>
 
-      <div className="footer__license">
+      <License>
         this project is under a{" "}
         <a
           href="https://www.gnu.org/licenses/gpl-3.0.en.html"
@@ -24,8 +60,8 @@ const Footer = () => {
           GNU General Public License v3.0
         </a>{" "}
         license
-      </div>
-    </footer>
+      </License>
+    </StyledFooter>
   )
 }
 

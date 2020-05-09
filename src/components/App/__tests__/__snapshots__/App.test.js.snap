@@ -5,16 +5,132 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <div
+        class="Default__Page-sc-1dva8bm-0 jlBPOI"
+      >
+        <header
+          class="styled__Header-sc-1542b73-0 khuwJo"
+        >
+          <h1
+            class="styled__Title-sc-1542b73-1 dueQmY"
+          >
+            Planet Express
+          </h1>
+          <h2
+            class="styled__Subtitle-sc-1542b73-2 fgarsH"
+          >
+            The auto relational searcher for political documents in Spain
+          </h2>
+        </header>
+        <main>
+          <form
+            action="/visualization"
+            class="styled__Form-sc-1pvlps0-0 ekRgbb styled__SearchForm-sc-18qtjly-0 bYxWeH"
+          >
+            <input
+              class="InputSearch-o5gozn-0 styled__InputSearch-sc-1pvlps0-1 iqhJlC"
+              name="topic"
+              placeholder="Introduce a topic to search"
+              required=""
+              type="search"
+              value=""
+            />
+            <div
+              class="styled__Dropdown-sc-191offi-0 jQa-dxL dropdown dropdown--sources dropdown--collapsed"
+            >
+              <button
+                class="styled__Button-sc-9epqn7-0 feUrUb dropdown__button"
+              >
+                all sources selected
+                <i
+                  icon="[object Object]"
+                />
+              </button>
+              <div
+                class="styled__Menu-uutoje-0 bbtYLq dropdown__menu"
+              >
+                <div
+                  class="DropdownError__StyledDropdownError-sc-1pi6o8b-0 BcLUJ dropdown__error dropdown__error--visible"
+                >
+                  <i
+                    icon="[object Object]"
+                  />
+                  You have to select at least one medium to search
+                </div>
+                <div
+                  class="sources"
+                >
+                  <div
+                    class="sources__errors"
+                  >
+                    TypeError: Cannot read property 'planetExpressCharts' of undefined
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="Button-sc-1j5owfu-0 styled__Button-sc-1pvlps0-2 dvMVjI"
+              title="Visualize"
+              type="submit"
+            >
+              Visualize
+            </button>
+          </form>
+        </main>
+        <footer
+          class="Footer__StyledFooter-sc-1qpelj1-0 dXAGwX"
+        >
+          <ul
+            class="Footer__Navigation-sc-1qpelj1-1 errRue"
+          >
+            <li>
+              <a
+                href="/about"
+              >
+                about the project
+              </a>
+            </li>
+            <li>
+              <a
+                href="/team"
+              >
+                about the team
+              </a>
+            </li>
+          </ul>
+          <div
+            class="Footer__License-sc-1qpelj1-2 hVyhRL"
+          >
+            this project is under a
+             
+            <a
+              href="https://www.gnu.org/licenses/gpl-3.0.en.html"
+              rel="license external noopener noreferrer"
+              title="GNU General Public License v3.0"
+            >
+              GNU General Public License v3.0
+            </a>
+             
+            license
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="Default__Page-sc-1dva8bm-0 jlBPOI"
+    >
       <header
-        class="header"
+        class="styled__Header-sc-1542b73-0 khuwJo"
       >
         <h1
-          class="header__title"
+          class="styled__Title-sc-1542b73-1 dueQmY"
         >
           Planet Express
         </h1>
         <h2
-          class="header__subtitle"
+          class="styled__Subtitle-sc-1542b73-2 fgarsH"
         >
           The auto relational searcher for political documents in Spain
         </h2>
@@ -22,27 +138,36 @@ Object {
       <main>
         <form
           action="/visualization"
+          class="styled__Form-sc-1pvlps0-0 ekRgbb styled__SearchForm-sc-18qtjly-0 bYxWeH"
         >
           <input
+            class="InputSearch-o5gozn-0 styled__InputSearch-sc-1pvlps0-1 iqhJlC"
             name="topic"
+            placeholder="Introduce a topic to search"
             required=""
             type="search"
             value=""
           />
           <div
-            class="dropdown dropdown--sources dropdown--collapsed"
+            class="styled__Dropdown-sc-191offi-0 jQa-dxL dropdown dropdown--sources dropdown--collapsed"
           >
             <button
-              class="dropdown__button"
+              class="styled__Button-sc-9epqn7-0 feUrUb dropdown__button"
             >
               all sources selected
+              <i
+                icon="[object Object]"
+              />
             </button>
             <div
-              class="dropdown__menu"
+              class="styled__Menu-uutoje-0 bbtYLq dropdown__menu"
             >
               <div
-                class="dropdown__error dropdown__error--visible"
+                class="DropdownError__StyledDropdownError-sc-1pi6o8b-0 BcLUJ dropdown__error dropdown__error--visible"
               >
+                <i
+                  icon="[object Object]"
+                />
                 You have to select at least one medium to search
               </div>
               <div
@@ -56,16 +181,20 @@ Object {
               </div>
             </div>
           </div>
-          <button>
+          <button
+            class="Button-sc-1j5owfu-0 styled__Button-sc-1pvlps0-2 dvMVjI"
+            title="Visualize"
+            type="submit"
+          >
             Visualize
           </button>
         </form>
       </main>
       <footer
-        class="footer"
+        class="Footer__StyledFooter-sc-1qpelj1-0 dXAGwX"
       >
         <ul
-          class="footer__navigation"
+          class="Footer__Navigation-sc-1qpelj1-1 errRue"
         >
           <li>
             <a
@@ -83,7 +212,7 @@ Object {
           </li>
         </ul>
         <div
-          class="footer__license"
+          class="Footer__License-sc-1qpelj1-2 hVyhRL"
         >
           this project is under a
            
@@ -99,101 +228,6 @@ Object {
         </div>
       </footer>
     </div>
-  </body>,
-  "container": <div>
-    <header
-      class="header"
-    >
-      <h1
-        class="header__title"
-      >
-        Planet Express
-      </h1>
-      <h2
-        class="header__subtitle"
-      >
-        The auto relational searcher for political documents in Spain
-      </h2>
-    </header>
-    <main>
-      <form
-        action="/visualization"
-      >
-        <input
-          name="topic"
-          required=""
-          type="search"
-          value=""
-        />
-        <div
-          class="dropdown dropdown--sources dropdown--collapsed"
-        >
-          <button
-            class="dropdown__button"
-          >
-            all sources selected
-          </button>
-          <div
-            class="dropdown__menu"
-          >
-            <div
-              class="dropdown__error dropdown__error--visible"
-            >
-              You have to select at least one medium to search
-            </div>
-            <div
-              class="sources"
-            >
-              <div
-                class="sources__errors"
-              >
-                TypeError: Cannot read property 'planetExpressCharts' of undefined
-              </div>
-            </div>
-          </div>
-        </div>
-        <button>
-          Visualize
-        </button>
-      </form>
-    </main>
-    <footer
-      class="footer"
-    >
-      <ul
-        class="footer__navigation"
-      >
-        <li>
-          <a
-            href="/about"
-          >
-            about the project
-          </a>
-        </li>
-        <li>
-          <a
-            href="/team"
-          >
-            about the team
-          </a>
-        </li>
-      </ul>
-      <div
-        class="footer__license"
-      >
-        this project is under a
-         
-        <a
-          href="https://www.gnu.org/licenses/gpl-3.0.en.html"
-          rel="license external noopener noreferrer"
-          title="GNU General Public License v3.0"
-        >
-          GNU General Public License v3.0
-        </a>
-         
-        license
-      </div>
-    </footer>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
