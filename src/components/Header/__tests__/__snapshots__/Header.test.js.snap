@@ -6,15 +6,15 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="header"
+        class="styled__Header-sc-1542b73-0 khuwJo"
       >
         <h1
-          class="header__title"
+          class="styled__Title-sc-1542b73-1 dueQmY"
         >
           Planet Express
         </h1>
         <h2
-          class="header__subtitle"
+          class="styled__Subtitle-sc-1542b73-2 fgarsH"
         >
           The auto relational searcher for political documents in Spain
         </h2>
@@ -23,15 +23,15 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="header"
+      class="styled__Header-sc-1542b73-0 khuwJo"
     >
       <h1
-        class="header__title"
+        class="styled__Title-sc-1542b73-1 dueQmY"
       >
         Planet Express
       </h1>
       <h2
-        class="header__subtitle"
+        class="styled__Subtitle-sc-1542b73-2 fgarsH"
       >
         The auto relational searcher for political documents in Spain
       </h2>

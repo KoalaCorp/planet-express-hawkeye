@@ -1,6 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import Styled from "./styled"
+import Icon from "../Icon"
+
+import { faCaretUp } from "@fortawesome/free-solid-svg-icons"
+
 const DropdownButton = (props) => {
   const handleOnClick = (e) => {
     e.preventDefault()
@@ -17,9 +22,10 @@ const DropdownButton = (props) => {
   }
 
   return (
-    <button className="dropdown__button" onClick={handleOnClick}>
+    <Styled.Button className="dropdown__button" onClick={handleOnClick}>
       {props.children}
-    </button>
+      <Icon icon={faCaretUp} />
+    </Styled.Button>
   )
 }
 

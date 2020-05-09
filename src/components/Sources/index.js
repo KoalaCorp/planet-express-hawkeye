@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import Styled from "./styled"
+
 const Sources = ({
   sources,
   selectedSources,
@@ -16,28 +18,30 @@ const Sources = ({
   }
 
   return (
-    <div className="sources">
-      <ul className="sources__list">
-        {sources.map((source, index) => {
-          return (
-            <li className="sources__list__item" key={index}>
-              <label>
-                <input
-                  type="checkbox"
-                  name="sources"
-                  value={source.attributes.label}
-                  onChange={handleSourceInputChange}
-                  defaultChecked={selectedSources.includes(
-                    source.attributes.label
-                  )}
-                />
-                <span>{source.attributes.name}</span>
-              </label>
-            </li>
-          )
-        })}
-      </ul>
-    </div>
+    <Styled.Sources>
+      {sources.map((source, index) => {
+        return (
+          <li className="sources__item" key={index}>
+            <label>
+              <Styled.Checkmark
+                checked={selectedSources.includes(source.attributes.label)}
+              />
+
+              <input
+                type="checkbox"
+                name="sources"
+                value={source.attributes.label}
+                onChange={handleSourceInputChange}
+                defaultChecked={selectedSources.includes(
+                  source.attributes.label
+                )}
+              />
+              <span>{source.attributes.name}</span>
+            </label>
+          </li>
+        )
+      })}
+    </Styled.Sources>
   )
 }
 

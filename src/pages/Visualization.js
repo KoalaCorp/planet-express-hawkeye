@@ -2,8 +2,7 @@ import React from "react"
 
 import useSearchParams from "../hooks/search-params"
 
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Layout from "../layouts/Default"
 import SearchForm from "../components/SearchForm"
 
 const Visualization = () => {
@@ -11,13 +10,9 @@ const Visualization = () => {
   const sources = useSearchParams().sources
 
   return (
-    <React.Fragment>
-      <Header />
-      <main>
-        <SearchForm topicSearchParam={topic} sourcesSearchParam={sources} />
-      </main>
-      <Footer />
-    </React.Fragment>
+    <Layout>
+      <SearchForm topicSearchParam={topic} sourcesSearchParam={sources} />
+    </Layout>
   )
 }
 

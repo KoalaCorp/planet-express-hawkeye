@@ -6,14 +6,22 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="dropdown__button"
-      />
+        class="styled__Button-sc-9epqn7-0 feUrUb dropdown__button"
+      >
+        <i
+          icon="[object Object]"
+        />
+      </button>
     </div>
   </body>,
   "container": <div>
     <button
-      class="dropdown__button"
-    />
+      class="styled__Button-sc-9epqn7-0 feUrUb dropdown__button"
+    >
+      <i
+        icon="[object Object]"
+      />
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

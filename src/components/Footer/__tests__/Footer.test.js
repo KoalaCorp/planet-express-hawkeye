@@ -1,5 +1,5 @@
 import React from "react"
-import { render } from "../../../../tests/helpers"
+import { render } from "../../../config/tests/helpers"
 
 import Footer from "../"
 

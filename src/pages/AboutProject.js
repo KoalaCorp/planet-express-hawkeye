@@ -1,18 +1,9 @@
 import React from "react"
 
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Layout from "../layouts/Default"
 
 const AboutProject = () => {
-  return (
-    <React.Fragment>
-      <Header />
-      <main>
-        <div>About the project</div>
-      </main>
-      <Footer />
-    </React.Fragment>
-  )
+  return <Layout>About the project</Layout>
 }
 
 export default AboutProject

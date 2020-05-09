@@ -1,13 +1,15 @@
 import React from "react"
 
+import Styled from "./styled"
+
 const Header = () => {
   return (
-    <header className="header">
-      <h1 className="header__title">Planet Express</h1>
-      <h2 className="header__subtitle">
+    <Styled.Header>
+      <Styled.Title>Planet Express</Styled.Title>
+      <Styled.Subtitle>
         The auto relational searcher for political documents in Spain
-      </h2>
-    </header>
+      </Styled.Subtitle>
+    </Styled.Header>
   )
 }
 

@@ -5,23 +5,15 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sources"
-      >
-        <ul
-          class="sources__list"
-        />
-      </div>
+      <ul
+        class="styled__Sources-llql3x-0 fOnPtd"
+      />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="sources"
-    >
-      <ul
-        class="sources__list"
-      />
-    </div>
+    <ul
+      class="styled__Sources-llql3x-0 fOnPtd"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
