@@ -8,10 +8,10 @@ import Styled from "./styled"
 
 const Checkmark = (props) => {
   return (
-    <span className="fa-layers fa-fw">
+    <Styled.Checkmark className="fa-layers fa-fw">
       <Styled.Square icon={faSquare} />
       {props.checked && <Styled.Check icon={faCheck} />}
-    </span>
+    </Styled.Checkmark>
   )
 }
 

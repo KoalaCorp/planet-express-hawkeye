@@ -1,6 +1,5 @@
 import styled from "styled-components"
 
-import Checkmark from "../Checkmark"
 import tools from "../../assets/styles/tools"
 
 export default {
@@ -13,9 +12,5 @@ export default {
     input[type="checkbox"] {
       ${tools.mixins.srOnly};
     }
-  `,
-
-  Checkmark: styled(Checkmark)`
-    margin-right: 1rem;
   `,
 }

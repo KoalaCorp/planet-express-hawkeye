@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="styled__Button-sc-9epqn7-0 feUrUb dropdown__button"
+        class="styled__Button-sc-9epqn7-0 iWbztU dropdown__button"
       >
         <i
           icon="[object Object]"
@@ -16,7 +16,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="styled__Button-sc-9epqn7-0 feUrUb dropdown__button"
+      class="styled__Button-sc-9epqn7-0 iWbztU dropdown__button"
     >
       <i
         icon="[object Object]"

@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <footer
-        class="Footer__StyledFooter-sc-1qpelj1-0 dXAGwX"
+        class="styled__Footer-sc-1fwt48x-0 bBFSxL"
       >
         <ul
-          class="Footer__Navigation-sc-1qpelj1-1 errRue"
+          class="styled__Navigation-sc-1fwt48x-1 kvXOAi"
         >
           <li>
             <a
@@ -27,7 +27,7 @@ Object {
           </li>
         </ul>
         <div
-          class="Footer__License-sc-1qpelj1-2 hVyhRL"
+          class="styled__License-sc-1fwt48x-2 kXCNav"
         >
           this project is under a
            
@@ -46,10 +46,10 @@ Object {
   </body>,
   "container": <div>
     <footer
-      class="Footer__StyledFooter-sc-1qpelj1-0 dXAGwX"
+      class="styled__Footer-sc-1fwt48x-0 bBFSxL"
     >
       <ul
-        class="Footer__Navigation-sc-1qpelj1-1 errRue"
+        class="styled__Navigation-sc-1fwt48x-1 kvXOAi"
       >
         <li>
           <a
@@ -67,7 +67,7 @@ Object {
         </li>
       </ul>
       <div
-        class="Footer__License-sc-1qpelj1-2 hVyhRL"
+        class="styled__License-sc-1fwt48x-2 kXCNav"
       >
         this project is under a
          
