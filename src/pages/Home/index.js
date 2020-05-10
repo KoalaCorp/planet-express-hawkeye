@@ -1,13 +1,12 @@
 import React from "react"
 
-import Layout from "../../layouts/Default"
 import Styled from "./styled"
 
 const Home = () => {
   return (
-    <Layout>
+    <Styled.Layout>
       <Styled.SearchForm />
-    </Layout>
+    </Styled.Layout>
   )
 }
 

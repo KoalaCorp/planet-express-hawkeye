@@ -9,7 +9,7 @@ Object {
         class="styled__Dropdown-sc-191offi-0 jQa-dxL dropdown dropdown--sources dropdown--collapsed"
       >
         <button
-          class="styled__Button-sc-9epqn7-0 feUrUb dropdown__button"
+          class="styled__Button-sc-9epqn7-0 iWbztU dropdown__button"
         >
           all sources selected
           <i
@@ -45,7 +45,7 @@ Object {
       class="styled__Dropdown-sc-191offi-0 jQa-dxL dropdown dropdown--sources dropdown--collapsed"
     >
       <button
-        class="styled__Button-sc-9epqn7-0 feUrUb dropdown__button"
+        class="styled__Button-sc-9epqn7-0 iWbztU dropdown__button"
       >
         all sources selected
         <i

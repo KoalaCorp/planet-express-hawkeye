@@ -6,7 +6,6 @@
  */
 
 import { createGlobalStyle } from "styled-components"
-import { rgba } from "polished"
 import { normalize } from "styled-normalize"
 
 const GenericStyles = createGlobalStyle`
@@ -33,7 +32,7 @@ const GenericStyles = createGlobalStyle`
     word-spacing: 0.16rem;
     color: ${(props) => props.theme.settings.colors.palette.primary};
     background-color: ${(props) =>
-      rgba(props.theme.settings.colors.palette.tertiary, 0.6)};
+      props.theme.settings.colors.palette.tertiary};
   }
 `
 
