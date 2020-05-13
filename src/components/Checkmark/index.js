@@ -8,7 +8,7 @@ import Styled from "./styled"
 
 const Checkmark = (props) => {
   return (
-    <Styled.Checkmark className="fa-layers fa-fw">
+    <Styled.Checkmark>
       <Styled.Square icon={faSquare} />
       {props.checked && <Styled.Check icon={faCheck} />}
     </Styled.Checkmark>

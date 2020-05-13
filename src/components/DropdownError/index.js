@@ -12,6 +12,8 @@ const StyledDropdownError = styled.div`
   padding: 1rem 1.8rem;
   font-size: 1.4rem;
   display: flex;
+  flex: 0 0 100%;
+  order: 1;
 
   ${Icon} {
     margin-right: 1rem;
