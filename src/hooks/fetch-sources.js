@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import PlanetExpressCharts from "../services/planet-express-charts"
+import PlanetExpressAbe from "../services/planet-express-abe"
 
 const useFetchSources = () => {
   const [loadingSources, setLoadingSources] = useState(true)
@@ -10,7 +10,7 @@ const useFetchSources = () => {
     const fetchSources = async () => {
       try {
         setLoadingSources(true)
-        const response = await PlanetExpressCharts.fetchSources()
+        const response = await PlanetExpressAbe.fetchSources()
         setSources(response.data.data)
       } catch (err) {
         setErrorsFetchSources(err.toString())
