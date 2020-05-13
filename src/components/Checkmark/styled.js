@@ -5,6 +5,8 @@ import Icon from "../Icon"
 export default {
   Checkmark: styled.span`
     margin-right: 1rem;
+    position: relative;
+    height: 2rem;
   `,
 
   Square: styled(Icon)`
@@ -16,5 +18,9 @@ export default {
   Check: styled(Icon)`
     color: ${(props) => props.theme.settings.colors.valid};
     font-size: 1rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   `,
 }

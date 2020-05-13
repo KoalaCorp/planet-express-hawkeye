@@ -8,6 +8,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     padding: 2rem;
+    flex: 0 0 100%;
 
     input[type="checkbox"] {
       ${tools.mixins.srOnly};
