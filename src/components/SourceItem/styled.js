@@ -1,19 +1,15 @@
 import styled from "styled-components"
 
-import Checkmark from "../Checkmark"
+const SourceItem = styled.li`
+  margin-bottom: 1rem;
+`
 
-export default {
-  Source: styled.li`
-    margin-bottom: 1rem;
-  `,
+const Label = styled.label`
+  display: flex;
 
-  Label: styled.label`
-    display: flex;
+  .fa-layers {
+    margin-top: 0.35rem;
+  }
+`
 
-    .fa-layers {
-      margin-top: 0.35rem;
-    }
-  `,
-
-  Checkmark: styled(Checkmark)``,
-}
+export default { SourceItem, Label }

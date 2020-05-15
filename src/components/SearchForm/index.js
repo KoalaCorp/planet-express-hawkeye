@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 
-import Styled from "./styled"
 import SourcesDropdown from "../SourcesDropdown"
+import Button from "../Button"
+import InputSearch from "../InputSearch"
+
+import Styled from "./styled"
 
 const SearchForm = (props) => {
-  const { topicSearchParam, sourcesSearchParam, ...otherProps } = props
+  const { topicSearchParam, sourcesSearchParam, ...others } = props
 
   const [query, setQuery] = useState(topicSearchParam)
 
@@ -18,8 +21,8 @@ const SearchForm = (props) => {
   }
 
   return (
-    <Styled.Form action="/visualization" {...otherProps}>
-      <Styled.InputSearch
+    <Styled.SearchForm action="/visualization" {...others}>
+      <InputSearch
         name="topic"
         required
         value={query}
@@ -29,10 +32,10 @@ const SearchForm = (props) => {
 
       <SourcesDropdown sourcesSearchParam={sourcesSearchParam} />
 
-      <Styled.Button type="submit" title="Visualize">
+      <Button type="submit" title="Visualize">
         Visualize
-      </Styled.Button>
-    </Styled.Form>
+      </Button>
+    </Styled.SearchForm>
   )
 }
 

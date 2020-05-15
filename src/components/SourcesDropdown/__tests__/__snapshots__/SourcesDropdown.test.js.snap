@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="styled__Dropdown-sc-191offi-0 jQa-dxL dropdown dropdown--sources dropdown--collapsed"
+        class="styled__SourcesDropdown-sc-191offi-0 bIZrUN dropdown dropdown--sources dropdown--collapsed"
       >
         <button
           class="styled__Button-sc-9epqn7-0 iWbztU dropdown__button"
@@ -17,10 +17,10 @@ Object {
           />
         </button>
         <div
-          class="styled__Menu-uutoje-0 bdYxwB dropdown__menu"
+          class="styled__DropdownMenu-uutoje-0 qwnQG dropdown__menu"
         >
           <div
-            class="DropdownError__StyledDropdownError-sc-1pi6o8b-0 geVLwp dropdown__error dropdown__error--visible"
+            class="styled__DropdownError-f40703-0 cHTBBi dropdown__error dropdown__error--visible"
           >
             <i
               icon="[object Object]"
@@ -42,7 +42,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="styled__Dropdown-sc-191offi-0 jQa-dxL dropdown dropdown--sources dropdown--collapsed"
+      class="styled__SourcesDropdown-sc-191offi-0 bIZrUN dropdown dropdown--sources dropdown--collapsed"
     >
       <button
         class="styled__Button-sc-9epqn7-0 iWbztU dropdown__button"
@@ -53,10 +53,10 @@ Object {
         />
       </button>
       <div
-        class="styled__Menu-uutoje-0 bdYxwB dropdown__menu"
+        class="styled__DropdownMenu-uutoje-0 qwnQG dropdown__menu"
       >
         <div
-          class="DropdownError__StyledDropdownError-sc-1pi6o8b-0 geVLwp dropdown__error dropdown__error--visible"
+          class="styled__DropdownError-f40703-0 cHTBBi dropdown__error dropdown__error--visible"
         >
           <i
             icon="[object Object]"

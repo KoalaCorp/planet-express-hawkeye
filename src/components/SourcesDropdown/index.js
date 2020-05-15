@@ -40,7 +40,7 @@ const SourcesDropdown = ({ sourcesSearchParam }) => {
   }
 
   return (
-    <Styled.Dropdown className="dropdown dropdown--sources dropdown--collapsed">
+    <Styled.SourcesDropdown className="dropdown dropdown--sources dropdown--collapsed">
       <DropdownButton>{dropdownPrompt}</DropdownButton>
 
       <DropdownMenu
@@ -61,7 +61,7 @@ const SourcesDropdown = ({ sourcesSearchParam }) => {
           errors={errorsFetchSources}
         />
       </DropdownMenu>
-    </Styled.Dropdown>
+    </Styled.SourcesDropdown>
   )
 }
 

@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="styled__Page-sc-1lxe0qt-0 DOXzj styled__Layout-sc-18qtjly-0 eDhlcv"
+        class="styled__Layout-sc-1lxe0qt-0 kcbATa styled__Layout-sc-18qtjly-0 beuBAs"
       >
         <div
           class="styled__Container-sc-1lxe0qt-1 gvOrMO"
@@ -28,10 +28,10 @@ Object {
           <main>
             <form
               action="/visualization"
-              class="styled__Form-sc-1pvlps0-0 ekRgbb styled__SearchForm-sc-18qtjly-1 hZXBcE"
+              class="styled__SearchForm-sc-1pvlps0-0 ljfmJq"
             >
               <input
-                class="InputSearch-o5gozn-0 styled__InputSearch-sc-1pvlps0-1 kxcXNl"
+                class="InputSearch-o5gozn-0 kicyAh"
                 name="topic"
                 placeholder="Introduce a topic to search"
                 required=""
@@ -39,7 +39,7 @@ Object {
                 value=""
               />
               <div
-                class="styled__Dropdown-sc-191offi-0 jQa-dxL dropdown dropdown--sources dropdown--collapsed"
+                class="styled__SourcesDropdown-sc-191offi-0 bIZrUN dropdown dropdown--sources dropdown--collapsed"
               >
                 <button
                   class="styled__Button-sc-9epqn7-0 iWbztU dropdown__button"
@@ -50,10 +50,10 @@ Object {
                   />
                 </button>
                 <div
-                  class="styled__Menu-uutoje-0 bdYxwB dropdown__menu"
+                  class="styled__DropdownMenu-uutoje-0 qwnQG dropdown__menu"
                 >
                   <div
-                    class="DropdownError__StyledDropdownError-sc-1pi6o8b-0 geVLwp dropdown__error dropdown__error--visible"
+                    class="styled__DropdownError-f40703-0 cHTBBi dropdown__error dropdown__error--visible"
                   >
                     <i
                       icon="[object Object]"
@@ -72,7 +72,7 @@ Object {
                 </div>
               </div>
               <button
-                class="Button-sc-1j5owfu-0 styled__Button-sc-1pvlps0-2 eoIFij"
+                class="Button-sc-1j5owfu-0 QYmTR"
                 title="Visualize"
                 type="submit"
               >
@@ -123,7 +123,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="styled__Page-sc-1lxe0qt-0 DOXzj styled__Layout-sc-18qtjly-0 eDhlcv"
+      class="styled__Layout-sc-1lxe0qt-0 kcbATa styled__Layout-sc-18qtjly-0 beuBAs"
     >
       <div
         class="styled__Container-sc-1lxe0qt-1 gvOrMO"
@@ -145,10 +145,10 @@ Object {
         <main>
           <form
             action="/visualization"
-            class="styled__Form-sc-1pvlps0-0 ekRgbb styled__SearchForm-sc-18qtjly-1 hZXBcE"
+            class="styled__SearchForm-sc-1pvlps0-0 ljfmJq"
           >
             <input
-              class="InputSearch-o5gozn-0 styled__InputSearch-sc-1pvlps0-1 kxcXNl"
+              class="InputSearch-o5gozn-0 kicyAh"
               name="topic"
               placeholder="Introduce a topic to search"
               required=""
@@ -156,7 +156,7 @@ Object {
               value=""
             />
             <div
-              class="styled__Dropdown-sc-191offi-0 jQa-dxL dropdown dropdown--sources dropdown--collapsed"
+              class="styled__SourcesDropdown-sc-191offi-0 bIZrUN dropdown dropdown--sources dropdown--collapsed"
             >
               <button
                 class="styled__Button-sc-9epqn7-0 iWbztU dropdown__button"
@@ -167,10 +167,10 @@ Object {
                 />
               </button>
               <div
-                class="styled__Menu-uutoje-0 bdYxwB dropdown__menu"
+                class="styled__DropdownMenu-uutoje-0 qwnQG dropdown__menu"
               >
                 <div
-                  class="DropdownError__StyledDropdownError-sc-1pi6o8b-0 geVLwp dropdown__error dropdown__error--visible"
+                  class="styled__DropdownError-f40703-0 cHTBBi dropdown__error dropdown__error--visible"
                 >
                   <i
                     icon="[object Object]"
@@ -189,7 +189,7 @@ Object {
               </div>
             </div>
             <button
-              class="Button-sc-1j5owfu-0 styled__Button-sc-1pvlps0-2 eoIFij"
+              class="Button-sc-1j5owfu-0 QYmTR"
               title="Visualize"
               type="submit"
             >
