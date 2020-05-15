@@ -1,13 +1,15 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import Checkmark from "../Checkmark"
+
 import Styled from "./styled"
 
 const SourceItem = (props) => {
   return (
-    <Styled.Source>
+    <Styled.SourceItem>
       <Styled.Label>
-        <Styled.Checkmark checked={props.checked} />
+        <Checkmark checked={props.checked} />
 
         <input
           type="checkbox"
@@ -18,7 +20,7 @@ const SourceItem = (props) => {
         />
         <span>{props.label}</span>
       </Styled.Label>
-    </Styled.Source>
+    </Styled.SourceItem>
   )
 }
 

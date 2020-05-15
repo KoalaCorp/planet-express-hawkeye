@@ -5,10 +5,8 @@ import tools from "../../assets/styles/tools"
 import Button from "../Button"
 import InputSearch from "../InputSearch"
 
-export default {
-  Form: styled.form``,
-
-  InputSearch: styled(InputSearch)`
+const SearchForm = styled.form`
+  ${InputSearch} {
     height: 4rem;
     font-size: 1.8rem;
     padding: 0 1.5rem;
@@ -18,9 +16,9 @@ export default {
       font-size: 2.4rem;
       padding: 0 3rem;
     }
-  `,
+  }
 
-  Button: styled(Button)`
+  ${Button} {
     height: 4rem;
     font-size: 1.8rem;
     width: 15rem;
@@ -31,5 +29,7 @@ export default {
       font-size: 2.4rem;
       width: 20rem;
     }
-  `,
-}
+  }
+`
+
+export default { SearchForm }

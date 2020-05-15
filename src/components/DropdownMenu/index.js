@@ -1,8 +1,8 @@
 import React from "react"
 import Styled from "./styled"
 
-const Menu = (props) => {
-  return <Styled.Menu className="dropdown__menu" {...props} />
+const DropdownMenu = (props) => {
+  return <Styled.DropdownMenu className="dropdown__menu" {...props} />
 }
 
-export default Menu
+export default DropdownMenu

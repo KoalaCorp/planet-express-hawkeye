@@ -2,25 +2,23 @@ import styled from "styled-components"
 
 import tools from "../../assets/styles/tools"
 
-import Layout from "../../layouts/Default"
+import LayoutDefault from "../../layouts/Default"
 import StyledSourcesDropdown from "../../components/SourcesDropdown/styled"
 import InputSearch from "../../components/InputSearch"
 import Button from "../../components/Button"
-import SearchForm from "../../components/SearchForm"
+import StyledSearchForm from "../../components/SearchForm/styled"
 
-export default {
-  Layout: styled(Layout)`
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr auto;
-  `,
+const Layout = styled(LayoutDefault)`
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
 
-  SearchForm: styled(SearchForm)`
+  ${StyledSearchForm.SearchForm} {
     max-width: 50rem;
     width: 100%;
     margin: 0 auto;
 
-    ${StyledSourcesDropdown.Dropdown} {
+    ${StyledSourcesDropdown.SourcesDropdown} {
       margin-bottom: 5rem;
     }
 
@@ -38,5 +36,7 @@ export default {
       margin: 0 auto;
       display: block;
     }
-  `,
-}
+  }
+`
+
+export default { Layout }
