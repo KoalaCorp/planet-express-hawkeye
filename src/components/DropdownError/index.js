@@ -7,18 +7,8 @@ import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons"
 import Styled from "./styled"
 
 const DropdownError = (props) => {
-  if (!props.visible) {
-    return null
-  }
-
   return (
-    <Styled.DropdownError
-      className={
-        props.visible
-          ? "dropdown__error dropdown__error--visible"
-          : "dropdown__error"
-      }
-    >
+    <Styled.DropdownError {...props}>
       <Icon icon={faExclamationTriangle} />
       {props.children}
     </Styled.DropdownError>
@@ -28,6 +18,5 @@ const DropdownError = (props) => {
 export default DropdownError
 
 DropdownError.propTypes = {
-  visible: PropTypes.bool,
   children: PropTypes.string,
 }

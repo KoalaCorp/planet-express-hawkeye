@@ -5,12 +5,15 @@ import Styled from "./styled"
 
 import SourceItem from "../SourceItem"
 
-const Sources = ({
-  sources,
-  selectedSources,
-  handleSourceInputChange,
-  errors,
-}) => {
+const Sources = (props) => {
+  const {
+    sources,
+    selectedSources,
+    handleSourceInputChange,
+    errors,
+    ...others
+  } = props
+
   if (errors) {
     return (
       <div className="sources">
@@ -20,7 +23,7 @@ const Sources = ({
   }
 
   return (
-    <Styled.Sources>
+    <Styled.Sources {...others}>
       {sources.map((source, index) => (
         <SourceItem
           key={index}

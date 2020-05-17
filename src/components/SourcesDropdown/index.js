@@ -13,6 +13,7 @@ import useFetchSources from "../../hooks/fetch-sources"
 const SourcesDropdown = ({ sourcesSearchParam }) => {
   const { sources, errorsFetchSources } = useFetchSources()
   const [selectedSources, setSelectedSources] = useState([])
+  const [collapsed, setCollapsed] = useState(true)
   const [dropdownPrompt, setDropdownPrompt] = useState("all medium selected")
 
   useEffect(() => {
@@ -39,20 +40,36 @@ const SourcesDropdown = ({ sourcesSearchParam }) => {
     }
   }
 
+  const handleClickButton = (e) => {
+    e.preventDefault()
+    setCollapsed(!collapsed)
+  }
+
+  const hasSelectedSources = () => {
+    return selectedSources.length
+  }
+
   return (
-    <Styled.SourcesDropdown className="dropdown dropdown--sources dropdown--collapsed">
-      <DropdownButton>{dropdownPrompt}</DropdownButton>
+    <Styled.SourcesDropdown
+      className="dropdown dropdown--sources"
+      collapsed={collapsed}
+      hasSelectedSources={hasSelectedSources()}
+    >
+      <DropdownButton onClick={handleClickButton}>
+        {dropdownPrompt}
+      </DropdownButton>
 
       <DropdownMenu
-        errorVisible={!selectedSources.length}
         sources={sources}
         selectedSources={selectedSources}
         handleSourceInputChange={handleSourceInputChange}
         errors={errorsFetchSources}
       >
-        <DropdownError visible={!selectedSources.length}>
-          You have to select at least one medium to search
-        </DropdownError>
+        {!hasSelectedSources() && (
+          <DropdownError>
+            You have to select at least one medium to search
+          </DropdownError>
+        )}
 
         <Sources
           sources={sources}

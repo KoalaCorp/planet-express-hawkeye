@@ -39,10 +39,10 @@ Object {
                 value=""
               />
               <div
-                class="styled__SourcesDropdown-sc-191offi-0 bIZrUN dropdown dropdown--sources dropdown--collapsed"
+                class="styled__SourcesDropdown-sc-191offi-0 fWlpyL dropdown dropdown--sources"
               >
                 <button
-                  class="styled__Button-sc-9epqn7-0 iWbztU dropdown__button"
+                  class="styled__Button-sc-9epqn7-0 lofZkZ dropdown__button"
                 >
                   all sources selected
                   <i
@@ -53,7 +53,7 @@ Object {
                   class="styled__DropdownMenu-uutoje-0 qwnQG dropdown__menu"
                 >
                   <div
-                    class="styled__DropdownError-f40703-0 cHTBBi dropdown__error dropdown__error--visible"
+                    class="styled__DropdownError-f40703-0 cHTBBi"
                   >
                     <i
                       icon="[object Object]"
@@ -156,10 +156,10 @@ Object {
               value=""
             />
             <div
-              class="styled__SourcesDropdown-sc-191offi-0 bIZrUN dropdown dropdown--sources dropdown--collapsed"
+              class="styled__SourcesDropdown-sc-191offi-0 fWlpyL dropdown dropdown--sources"
             >
               <button
-                class="styled__Button-sc-9epqn7-0 iWbztU dropdown__button"
+                class="styled__Button-sc-9epqn7-0 lofZkZ dropdown__button"
               >
                 all sources selected
                 <i
@@ -170,7 +170,7 @@ Object {
                 class="styled__DropdownMenu-uutoje-0 qwnQG dropdown__menu"
               >
                 <div
-                  class="styled__DropdownError-f40703-0 cHTBBi dropdown__error dropdown__error--visible"
+                  class="styled__DropdownError-f40703-0 cHTBBi"
                 >
                   <i
                     icon="[object Object]"
