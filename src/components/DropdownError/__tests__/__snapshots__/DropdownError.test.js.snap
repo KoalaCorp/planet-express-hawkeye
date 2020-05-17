@@ -4,9 +4,25 @@ exports[`DropdownError renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
-    <div />
+    <div>
+      <div
+        class="styled__DropdownError-f40703-0 cHTBBi"
+      >
+        <i
+          icon="[object Object]"
+        />
+      </div>
+    </div>
   </body>,
-  "container": <div />,
+  "container": <div>
+    <div
+      class="styled__DropdownError-f40703-0 cHTBBi"
+    >
+      <i
+        icon="[object Object]"
+      />
+    </div>
+  </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],
