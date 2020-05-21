@@ -21,7 +21,7 @@ const DefaultLayout = (props) => {
 export default DefaultLayout
 
 DefaultLayout.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   hiddenHeader: PropTypes.bool,
   hiddenFooter: PropTypes.bool,
 }
