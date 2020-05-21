@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 
 import Styled from "./styled"
@@ -13,6 +13,10 @@ const Sources = (props) => {
     errors,
     ...others
   } = props
+
+  useEffect(() => {
+    console.log(selectedSources)
+  }, [selectedSources])
 
   if (errors) {
     return (
@@ -29,7 +33,7 @@ const Sources = (props) => {
           key={index}
           label={source.attributes.name}
           value={source.attributes.label}
-          checked={selectedSources.includes(source.attributes.label)}
+          selectedSources={selectedSources}
           onChange={handleSourceInputChange}
         />
       ))}

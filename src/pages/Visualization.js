@@ -11,7 +11,7 @@ const Visualization = () => {
 
   return (
     <Layout>
-      <SearchForm topicSearchParam={topic} sourcesSearchParam={sources} />
+      <SearchForm topic={topic} sources={sources} />
     </Layout>
   )
 }

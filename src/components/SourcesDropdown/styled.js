@@ -22,6 +22,7 @@ const SourcesDropdown = styled.div`
 
   ${(props) =>
     !props.hasSelectedSources &&
+    !props.loadingSources &&
     css`
       ${DropdownButton.Button} {
         color: ${(props) => props.theme.settings.colors.error};

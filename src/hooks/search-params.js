@@ -10,7 +10,7 @@ const useSearchParams = () => {
   useEffect(() => {
     const search = new URLSearchParams(location.search)
 
-    setTopic(search.get("topic") || "")
+    setTopic(search.get("topic"))
     setSources(search.getAll("sources"))
   }, [location.search])
 

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 
 import Checkmark from "../Checkmark"
@@ -6,19 +6,26 @@ import Checkmark from "../Checkmark"
 import Styled from "./styled"
 
 const SourceItem = (props) => {
+  const { label, value, selectedSources, onChange, ...others } = props
+  const [checked, setChecked] = useState(true)
+
+  useEffect(() => {
+    setChecked(selectedSources.includes(value))
+  }, [selectedSources, value])
+
   return (
-    <Styled.SourceItem>
+    <Styled.SourceItem {...others}>
       <Styled.Label>
-        <Checkmark checked={props.checked} />
+        <Checkmark checked={checked} />
 
         <input
           type="checkbox"
           name="sources"
-          value={props.value}
-          onChange={props.onChange}
-          defaultChecked={props.checked}
+          value={value}
+          onChange={onChange}
+          defaultChecked={checked}
         />
-        <span>{props.label}</span>
+        <span>{label}</span>
       </Styled.Label>
     </Styled.SourceItem>
   )
@@ -27,8 +34,8 @@ const SourceItem = (props) => {
 export default SourceItem
 
 SourceItem.propTypes = {
-  checked: PropTypes.bool,
   label: PropTypes.string,
   value: PropTypes.string,
+  selectedSources: PropTypes.array,
   onChange: PropTypes.func,
 }
