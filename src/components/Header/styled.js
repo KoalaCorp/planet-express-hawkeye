@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { rgba } from "polished"
 
 import tools from "../../assets/styles/tools"
@@ -9,6 +9,12 @@ const Header = styled.header`
   @media ${tools.devices.lg} {
     padding-top: 3rem;
   }
+
+  ${(props) =>
+    props.srOnly &&
+    css`
+      ${tools.mixins.srOnly};
+    `}
 `
 
 const Title = styled.h1`
@@ -17,7 +23,7 @@ const Title = styled.h1`
   margin: 0 0 2.8rem 0;
   font-size: 3.6rem;
 
-  @media ${tools.devices.lg} {
+  @media ${tools.devices.md} {
     font-size: 4.8rem;
   }
 `
@@ -30,7 +36,7 @@ const Subtitle = styled.h2`
   margin: 0 auto 3rem auto;
   font-size: 1.8rem;
 
-  @media ${tools.devices.lg} {
+  @media ${tools.devices.md} {
     font-size: 2.4rem;
     margin: 0 auto 5rem auto;
   }

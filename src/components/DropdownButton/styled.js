@@ -10,19 +10,14 @@ const Button = styled.button`
   background-color: ${(props) => rgba(props.theme.settings.colors.dark, 0.04)};
   transition: background-color 300ms, color 300ms;
   text-align: left;
-  padding: 0 4rem 0 1.5rem;
   display: flex;
   align-items: center;
-  height: 4rem;
-  font-size: 1.8rem;
+  height: 6rem;
   position: relative;
   width: 100%;
-
-  @media ${tools.devices.md} {
-    height: 6rem;
-    font-size: 2.4rem;
-    padding: 0 5rem 0 3rem;
-  }
+  height: 6rem;
+  font-size: 2.4rem;
+  padding: 0 5rem 0 3rem;
 
   &:hover {
     color: ${(props) => rgba(props.theme.settings.colors.palette.primary, 0.8)};

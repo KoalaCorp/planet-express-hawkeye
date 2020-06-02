@@ -2,9 +2,9 @@ import React from "react"
 
 import Styled from "./styled"
 
-const Header = () => {
+const Header = (props) => {
   return (
-    <Styled.Header>
+    <Styled.Header {...props}>
       <Styled.Title>Planet Express</Styled.Title>
       <Styled.Subtitle>
         The auto relational searcher for political documents in Spain

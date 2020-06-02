@@ -6,21 +6,21 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="styled__Layout-sc-1lxe0qt-0 kcbATa styled__Layout-sc-18qtjly-0 beuBAs"
+        class="styled__Layout-sc-1lxe0qt-0 kcbATa styled__Layout-sc-18qtjly-0 idOfLW"
       >
         <div
-          class="styled__Container-sc-1lxe0qt-1 gvOrMO"
+          class="styled__Container-sc-1lxe0qt-1 iebHNC"
         >
           <header
-            class="styled__Header-sc-1542b73-0 ixsOOE"
+            class="styled__Header-sc-1542b73-0 hKVAlX"
           >
             <h1
-              class="styled__Title-sc-1542b73-1 kmBcDI"
+              class="styled__Title-sc-1542b73-1 hASrqt"
             >
               Planet Express
             </h1>
             <h2
-              class="styled__Subtitle-sc-1542b73-2 rKffD"
+              class="styled__Subtitle-sc-1542b73-2 tgjZi"
             >
               The auto relational searcher for political documents in Spain
             </h2>
@@ -28,61 +28,73 @@ Object {
           <main>
             <form
               action="/visualization"
-              class="styled__SearchForm-sc-1pvlps0-0 ljfmJq"
+              class="styled__SearchForm-sc-1pvlps0-0 llbrTr"
             >
-              <input
-                class="InputSearch-o5gozn-0 kicyAh"
-                name="topic"
-                placeholder="Introduce a topic to search"
-                required=""
-                type="search"
-                value=""
-              />
               <div
-                class="styled__SourcesDropdown-sc-191offi-0 fWlpyL dropdown dropdown--sources"
+                class="styled__SearchFormGroup-sc-1pvlps0-1 jMptNP"
               >
-                <button
-                  class="styled__Button-sc-9epqn7-0 lofZkZ dropdown__button"
-                >
-                  all sources selected
-                  <i
-                    icon="[object Object]"
-                  />
-                </button>
+                <input
+                  class="InputSearch-o5gozn-0 kicyAh"
+                  name="topic"
+                  placeholder="Introduce a topic to search"
+                  required=""
+                  type="search"
+                  value=""
+                />
+              </div>
+              <div
+                class="styled__SearchFormGroup-sc-1pvlps0-1 jMptNP searchFormGroup--dropdown"
+              >
                 <div
-                  class="styled__DropdownMenu-uutoje-0 qwnQG dropdown__menu"
+                  class="styled__SourcesDropdown-sc-191offi-0 fWlpyL dropdown dropdown--sources"
                 >
-                  <div
-                    class="styled__DropdownError-f40703-0 cHTBBi"
+                  <button
+                    class="styled__Button-sc-9epqn7-0 VXkYc dropdown__button"
                   >
+                    all sources selected
                     <i
                       icon="[object Object]"
                     />
-                    You have to select at least one medium to search
-                  </div>
+                  </button>
                   <div
-                    class="sources"
+                    class="styled__DropdownMenu-uutoje-0 qwnQG dropdown__menu"
                   >
                     <div
-                      class="sources__errors"
+                      class="styled__DropdownError-f40703-0 cHTBBi"
                     >
-                      TypeError: Cannot read property 'planetExpressAbe' of undefined
+                      <i
+                        icon="[object Object]"
+                      />
+                      You have to select at least one medium to search
+                    </div>
+                    <div
+                      class="sources"
+                    >
+                      <div
+                        class="sources__errors"
+                      >
+                        TypeError: Cannot read property 'planetExpressAbe' of undefined
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <button
-                class="Button-sc-1j5owfu-0 QYmTR"
-                title="Visualize"
-                type="submit"
+              <div
+                class="styled__SearchFormGroup-sc-1pvlps0-1 jMptNP searchFormGroup--button"
               >
-                Visualize
-              </button>
+                <button
+                  class="Button-sc-1j5owfu-0 QYmTR"
+                  title="Visualize"
+                  type="submit"
+                >
+                  Visualize
+                </button>
+              </div>
             </form>
           </main>
         </div>
         <footer
-          class="styled__Footer-sc-1fwt48x-0 bBFSxL"
+          class="styled__Footer-sc-1fwt48x-0 frCzfW"
         >
           <ul
             class="styled__Navigation-sc-1fwt48x-1 kvXOAi"
@@ -123,21 +135,21 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="styled__Layout-sc-1lxe0qt-0 kcbATa styled__Layout-sc-18qtjly-0 beuBAs"
+      class="styled__Layout-sc-1lxe0qt-0 kcbATa styled__Layout-sc-18qtjly-0 idOfLW"
     >
       <div
-        class="styled__Container-sc-1lxe0qt-1 gvOrMO"
+        class="styled__Container-sc-1lxe0qt-1 iebHNC"
       >
         <header
-          class="styled__Header-sc-1542b73-0 ixsOOE"
+          class="styled__Header-sc-1542b73-0 hKVAlX"
         >
           <h1
-            class="styled__Title-sc-1542b73-1 kmBcDI"
+            class="styled__Title-sc-1542b73-1 hASrqt"
           >
             Planet Express
           </h1>
           <h2
-            class="styled__Subtitle-sc-1542b73-2 rKffD"
+            class="styled__Subtitle-sc-1542b73-2 tgjZi"
           >
             The auto relational searcher for political documents in Spain
           </h2>
@@ -145,61 +157,73 @@ Object {
         <main>
           <form
             action="/visualization"
-            class="styled__SearchForm-sc-1pvlps0-0 ljfmJq"
+            class="styled__SearchForm-sc-1pvlps0-0 llbrTr"
           >
-            <input
-              class="InputSearch-o5gozn-0 kicyAh"
-              name="topic"
-              placeholder="Introduce a topic to search"
-              required=""
-              type="search"
-              value=""
-            />
             <div
-              class="styled__SourcesDropdown-sc-191offi-0 fWlpyL dropdown dropdown--sources"
+              class="styled__SearchFormGroup-sc-1pvlps0-1 jMptNP"
             >
-              <button
-                class="styled__Button-sc-9epqn7-0 lofZkZ dropdown__button"
-              >
-                all sources selected
-                <i
-                  icon="[object Object]"
-                />
-              </button>
+              <input
+                class="InputSearch-o5gozn-0 kicyAh"
+                name="topic"
+                placeholder="Introduce a topic to search"
+                required=""
+                type="search"
+                value=""
+              />
+            </div>
+            <div
+              class="styled__SearchFormGroup-sc-1pvlps0-1 jMptNP searchFormGroup--dropdown"
+            >
               <div
-                class="styled__DropdownMenu-uutoje-0 qwnQG dropdown__menu"
+                class="styled__SourcesDropdown-sc-191offi-0 fWlpyL dropdown dropdown--sources"
               >
-                <div
-                  class="styled__DropdownError-f40703-0 cHTBBi"
+                <button
+                  class="styled__Button-sc-9epqn7-0 VXkYc dropdown__button"
                 >
+                  all sources selected
                   <i
                     icon="[object Object]"
                   />
-                  You have to select at least one medium to search
-                </div>
+                </button>
                 <div
-                  class="sources"
+                  class="styled__DropdownMenu-uutoje-0 qwnQG dropdown__menu"
                 >
                   <div
-                    class="sources__errors"
+                    class="styled__DropdownError-f40703-0 cHTBBi"
                   >
-                    TypeError: Cannot read property 'planetExpressAbe' of undefined
+                    <i
+                      icon="[object Object]"
+                    />
+                    You have to select at least one medium to search
+                  </div>
+                  <div
+                    class="sources"
+                  >
+                    <div
+                      class="sources__errors"
+                    >
+                      TypeError: Cannot read property 'planetExpressAbe' of undefined
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <button
-              class="Button-sc-1j5owfu-0 QYmTR"
-              title="Visualize"
-              type="submit"
+            <div
+              class="styled__SearchFormGroup-sc-1pvlps0-1 jMptNP searchFormGroup--button"
             >
-              Visualize
-            </button>
+              <button
+                class="Button-sc-1j5owfu-0 QYmTR"
+                title="Visualize"
+                type="submit"
+              >
+                Visualize
+              </button>
+            </div>
           </form>
         </main>
       </div>
       <footer
-        class="styled__Footer-sc-1fwt48x-0 bBFSxL"
+        class="styled__Footer-sc-1fwt48x-0 frCzfW"
       >
         <ul
           class="styled__Navigation-sc-1fwt48x-1 kvXOAi"

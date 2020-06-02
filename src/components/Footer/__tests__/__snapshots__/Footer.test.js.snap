@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <footer
-        class="styled__Footer-sc-1fwt48x-0 bBFSxL"
+        class="styled__Footer-sc-1fwt48x-0 frCzfW"
       >
         <ul
           class="styled__Navigation-sc-1fwt48x-1 kvXOAi"
@@ -46,7 +46,7 @@ Object {
   </body>,
   "container": <div>
     <footer
-      class="styled__Footer-sc-1fwt48x-0 bBFSxL"
+      class="styled__Footer-sc-1fwt48x-0 frCzfW"
     >
       <ul
         class="styled__Navigation-sc-1fwt48x-1 kvXOAi"

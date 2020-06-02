@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 import tools from "../../assets/styles/tools"
 
@@ -13,6 +13,12 @@ const Footer = styled.footer`
     display: flex;
     align-items: center;
   }
+
+  ${(props) =>
+    props.srOnly &&
+    css`
+      ${tools.mixins.srOnly};
+    `}
 `
 
 const Navigation = styled.ul`

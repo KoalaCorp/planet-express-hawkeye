@@ -3,9 +3,9 @@ import { Link } from "react-router-dom"
 
 import Styled from "./styled"
 
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <Styled.Footer>
+    <Styled.Footer {...props}>
       <Styled.Navigation>
         <li>
           <Link to="/about">about the project</Link>

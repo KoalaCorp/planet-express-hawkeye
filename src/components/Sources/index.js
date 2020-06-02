@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 
 import Styled from "./styled"
@@ -13,10 +13,6 @@ const Sources = (props) => {
     errors,
     ...others
   } = props
-
-  useEffect(() => {
-    console.log(selectedSources)
-  }, [selectedSources])
 
   if (errors) {
     return (

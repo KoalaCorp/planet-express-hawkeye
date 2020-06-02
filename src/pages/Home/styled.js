@@ -3,6 +3,7 @@ import styled from "styled-components"
 import tools from "../../assets/styles/tools"
 
 import LayoutDefault from "../../layouts/Default"
+import StyledLayout from "../../layouts/styled"
 import StyledSourcesDropdown from "../../components/SourcesDropdown/styled"
 import InputSearch from "../../components/InputSearch"
 import Button from "../../components/Button"
@@ -12,6 +13,10 @@ const Layout = styled(LayoutDefault)`
   min-height: 100vh;
   display: grid;
   grid-template-rows: 1fr auto;
+
+  ${StyledLayout.Container} {
+    padding: 0 2rem;
+  }
 
   ${StyledSearchForm.SearchForm} {
     max-width: 50rem;

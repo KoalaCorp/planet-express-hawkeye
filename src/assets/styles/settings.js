@@ -26,6 +26,8 @@ const settings = {
     md: 768,
     lg: 840,
     xl: 1024,
+    xxl: 1200,
+    xxxl: 1440,
   },
 
   typography: {

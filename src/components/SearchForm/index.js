@@ -10,20 +10,34 @@ import Styled from "./styled"
 const SearchForm = (props) => {
   const { topic, sources, ...others } = props
 
+  const handleInput = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault()
+      e.target.parentElement.submit()
+    }
+  }
+
   return (
     <Styled.SearchForm action="/visualization" {...others}>
-      <InputSearch
-        name="topic"
-        required
-        defaultValue={topic}
-        placeholder="Introduce a topic to search"
-      />
+      <Styled.SearchFormGroup>
+        <InputSearch
+          name="topic"
+          required
+          defaultValue={topic}
+          placeholder="Introduce a topic to search"
+          onKeyDown={handleInput}
+        />
+      </Styled.SearchFormGroup>
 
-      <SourcesDropdown initiallySelectedSources={sources} />
+      <Styled.SearchFormGroup className="searchFormGroup--dropdown">
+        <SourcesDropdown initiallySelectedSources={sources} />
+      </Styled.SearchFormGroup>
 
-      <Button type="submit" title="Visualize">
-        Visualize
-      </Button>
+      <Styled.SearchFormGroup className="searchFormGroup--button">
+        <Button type="submit" title="Visualize">
+          Visualize
+        </Button>
+      </Styled.SearchFormGroup>
     </Styled.SearchForm>
   )
 }

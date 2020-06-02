@@ -34,6 +34,12 @@ const GenericStyles = createGlobalStyle`
     background-color: ${(props) =>
       props.theme.settings.colors.palette.tertiary};
   }
+
+  button {
+    &:not(:disabled) {
+      cursor: pointer;
+    }
+  }
 `
 
 export default GenericStyles

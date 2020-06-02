@@ -15,6 +15,7 @@ const devices = {
   md: `(min-width: ${settings.breakpoints.md}px)`,
   lg: `(min-width: ${settings.breakpoints.lg}px)`,
   xl: `(min-width: ${settings.breakpoints.xl}px)`,
+  xxl: `(min-width: ${settings.breakpoints.xxl}px)`,
 }
 
 const srOnly = css`

@@ -7,13 +7,15 @@ import Footer from "../components/Footer"
 import Styled from "./styled"
 
 const DefaultLayout = (props) => {
+  const { hiddenHeader, hiddenFooter, children, ...others } = props
+
   return (
-    <Styled.Layout {...props}>
+    <Styled.Layout {...others}>
       <Styled.Container>
-        <Header hiddenHeader={props.hiddenHeader} />
-        <main>{props.children}</main>
+        <Header srOnly={hiddenHeader} />
+        <main>{children}</main>
       </Styled.Container>
-      <Footer hiddenFooter={props.hiddenFooter} />
+      <Footer srOnly={hiddenFooter} />
     </Styled.Layout>
   )
 }
