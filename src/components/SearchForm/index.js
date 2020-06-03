@@ -9,16 +9,17 @@ import Styled from "./styled"
 
 const SearchForm = (props) => {
   const { topic, sources, ...others } = props
+  const formRef = React.createRef()
 
   const handleInput = (e) => {
     if (e.key === "Enter") {
       e.preventDefault()
-      e.target.parentElement.submit()
+      formRef.current.submit()
     }
   }
 
   return (
-    <Styled.SearchForm action="/visualization" {...others}>
+    <Styled.SearchForm action="/visualization" ref={formRef} {...others}>
       <Styled.SearchFormGroup>
         <InputSearch
           name="topic"
