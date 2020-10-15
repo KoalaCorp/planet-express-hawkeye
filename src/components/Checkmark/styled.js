@@ -1,0 +1,26 @@
+import styled from "styled-components"
+
+import Icon from "../Icon"
+
+const Checkmark = styled.span`
+  margin-right: 1rem;
+  position: relative;
+  height: 2rem;
+`
+
+const Square = styled(Icon)`
+  color: ${(props) => props.theme.settings.colors.mid};
+  background-color: ${(props) => props.theme.settings.colors.light};
+  font-size: 2rem;
+`
+
+const Check = styled(Icon)`
+  color: ${(props) => props.theme.settings.colors.valid};
+  font-size: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+`
+
+export default { Checkmark, Square, Check }

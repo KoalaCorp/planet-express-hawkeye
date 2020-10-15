@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SourcesDropdown renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="styled__SourcesDropdown-sc-191offi-0 fWlpyL dropdown dropdown--sources"
+      >
+        <button
+          class="styled__Button-sc-9epqn7-0 VXkYc dropdown__button"
+        >
+          all sources selected
+          <i
+            icon="[object Object]"
+          />
+        </button>
+        <div
+          class="styled__DropdownMenu-uutoje-0 qwnQG dropdown__menu"
+        >
+          <div
+            class="styled__DropdownError-f40703-0 cHTBBi"
+          >
+            <i
+              icon="[object Object]"
+            />
+            You have to select at least one medium to search
+          </div>
+          <div
+            class="sources"
+          >
+            <div
+              class="sources__errors"
+            >
+              TypeError: Cannot read property 'planetExpressAbe' of undefined
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="styled__SourcesDropdown-sc-191offi-0 fWlpyL dropdown dropdown--sources"
+    >
+      <button
+        class="styled__Button-sc-9epqn7-0 VXkYc dropdown__button"
+      >
+        all sources selected
+        <i
+          icon="[object Object]"
+        />
+      </button>
+      <div
+        class="styled__DropdownMenu-uutoje-0 qwnQG dropdown__menu"
+      >
+        <div
+          class="styled__DropdownError-f40703-0 cHTBBi"
+        >
+          <i
+            icon="[object Object]"
+          />
+          You have to select at least one medium to search
+        </div>
+        <div
+          class="sources"
+        >
+          <div
+            class="sources__errors"
+          >
+            TypeError: Cannot read property 'planetExpressAbe' of undefined
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

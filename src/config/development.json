@@ -1,0 +1,8 @@
+{
+  "services": {
+    "planetExpressAbe": {
+      "path": "http://localhost:5000",
+      "timeout": 8000
+    }
+  }
+}

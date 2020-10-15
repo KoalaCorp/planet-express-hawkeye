@@ -1,0 +1,27 @@
+{
+  "links": {
+    "self": "http://localhost:5000/collections"
+  },
+  "data": [
+    {
+      "type": "collection",
+      "attributes": {
+        "collection": "elfarodeceuta",
+        "name": "El Faro de Ceuta"
+      },
+      "links": {
+        "self": "https://elfarodeceuta.es/"
+      }
+    },
+    {
+      "type": "collection",
+      "attributes": {
+        "collection": "elpueblodeceuta",
+        "name": "El Pueblo de Ceuta"
+      },
+      "links": {
+        "self": "https://elpueblodeceuta.es/"
+      }
+    }
+  ]
+}

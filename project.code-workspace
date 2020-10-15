@@ -1,0 +1,29 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    // Set the default
+    "editor.formatOnSave": false,
+    "prettier.eslintIntegration": true,
+    // Enable per-language
+    "[javascript]": {
+      "editor.formatOnSave": true
+    },
+    "[javascriptreact]": {
+      "editor.formatOnSave": true
+    },
+    "[json]": {
+      "editor.formatOnSave": true
+    },
+    "search.exclude": {
+      "**/__snapshots__": true,
+      "yarn.lock": true
+    }
+  }
+}
